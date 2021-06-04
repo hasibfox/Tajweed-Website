@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+/* Navbar */
+
+.nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 2px -2px gray;
+
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav h1 {
+    font-family: 'Pirata One', cursive;
+    margin-left: 10px;
+}
+.nav i {
+    font-size: 30px;
+}
+
+/*Letters*/
+
+.letters-container {
+    padding: 5vw;
+    padding-top: 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.letters{
+    background: lightgray;
+    min-height: 70vh;
+    width: 100vw;
+    border: 2px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0vw;
+    flex-wrap: wrap;
+}
+#letter-box{
+    height: 15vh;
+    margin-left: 20px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 10vw;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border: black 2px solid;
+    cursor: pointer;
+    transition: ease-in-out background .5s;
+
+}
+#letter-box:hover{
+    background: rgb(217, 240, 248);
+    }
+
+#letter-box h2 {
+    font-size: clamp(2rem, 15vw, 2rem); 
+}
+#letter-box h3 {
+    font-size: clamp(1rem, 10vw, 1.5rem); 
+}
+.sidenav { 
+    background: forestgreen;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top:25vh;
+    
+}
+.box{
+    width: 10vh;
+    height: 10vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box h2 {
+    font-size: 15px;
+}
+.normal{
+    font-size: 100px;
+}
+.fatha,.damma{
+    margin-bottom: -5.5vh;
+    margin-left: -.7vw;
+    font-size: 50px;
+}
+.kesra{
+    font-size: 50px;
+    margin-top: -5vh;
+    margin-left: -.7vw;
+}
+.content {
+    display: none;
+    padding: 10px 20px;
+  }
+  
+  .content.active {
+    display: block;
+  }
+
+  /*Carousel One*/
+  .carousel {
+      width: 30vw;
+      height: 30vh;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      background: lightpink;
+  }
+  .carousel h1 {
+      text-align: center;
+  }
+  .carousel-container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .pineapple{
+    position: absolute;
+    margin-top: 1vh;
+    margin-left: -1.2vw;
+}
+  @media only screen and (max-width: 700px) {
+    #letter-box{
+        width: 20vw;
+    }
+    .letters {
+        padding: 0vw;
+
+    }
+  }
